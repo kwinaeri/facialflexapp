@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Facialflex" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/main_color</item>
+
+        <item name="android:statusBarColor">@color/darken_main_color</item>
+        <!-- Optional: Set whether status bar icons are dark or light -->
+        <!-- For light status bar background, set to true to make icons dark -->
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="LoginSignupTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Set the status bar color for the login activity -->
+        <item name="android:statusBarColor">@color/main_color</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+        <!-- Custom dialog theme -->
+    <style name="BlurryDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.8</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="Theme.Facialflex" parent="Base.Theme.Facialflex" />
+</resources>
+

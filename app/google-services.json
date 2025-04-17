@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "99454959147",
+    "firebase_url": "https://facial-flex-default-rtdb.firebaseio.com",
+    "project_id": "facial-flex",
+    "storage_bucket": "facial-flex.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99454959147:android:b76471ddbb7a945089f46e",
+        "android_client_info": {
+          "package_name": "com.example.facialflex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "99454959147-jfdatgvlrqq6roqqjmsgsl1tf1kj28ds.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVT4W5JT53GhawUE5OygiOl8mBrxPw59Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "99454959147-jfdatgvlrqq6roqqjmsgsl1tf1kj28ds.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

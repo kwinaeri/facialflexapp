@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_darken"
+    tools:context=".DetectMeFragment">
+
+    <!-- AppBar with Toolbar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        app:elevation="8dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <!-- RelativeLayout for placing logo and logout icon -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Logo on the left -->
+                <ImageView
+                    android:id="@+id/logo_image"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/facialflex_stroke"
+                    android:contentDescription="App Logo"/>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Scrollable content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/appbar"
+        android:background="@drawable/gradient_bg">
+
+        <TextView
+            android:id="@+id/instruction_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INSTRUCTIONS"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_black"
+            android:background="@drawable/dblue_background"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="12dp"
+            android:elevation="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Good Lighting: Ensure that the area where you are is well-lit. Poor lighting may affect the accuracy of the results.\n2. Remove Glasses: Please remove any glasses or obstructive eyewear before initiating the detection process.\n3. Direct Stare: Maintain direct eye contact with the camera throughout the detection process. Avoid looking away or diverting your gaze.\n4. Minimal Movement: Refrain from excessive movement or blinking during the detection process. Keep your face as still as possible for accurate results.\n5. Human Faces Only: Ensure that only a human face is within the detection area. The facial recognition system is designed to detect human facial features specifically. Keep animals, objects, or robots away from the camera's field of view during the detection process to prevent misinterpretation or erroneous results."
+            android:textColor="@color/black"
+            android:fontFamily="@font/lato"
+            android:textAlignment="viewStart"
+            android:justificationMode="inter_word"
+            android:textSize="12sp"
+            android:lineSpacingExtra="5dp"
+            android:padding="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/white_background"
+            android:elevation="4dp"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="Let's Get Started!"
+            android:id="@+id/redirect_to_detect"
+            android:layout_gravity="center"
+            android:elevation="2dp"
+            app:cornerRadius="50dp"
+            android:backgroundTint="@color/secondary_color"/>
+
+        <!-- Add a spacer at the bottom -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

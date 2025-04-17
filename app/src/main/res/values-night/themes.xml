@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Facialflex" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/secondary_color</item>
+
+        <item name="android:statusBarColor">@color/main_color</item>
+        <!-- Optional: Set whether status bar icons are dark or light -->
+        <!-- For light status bar background, set to true to make icons dark -->
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

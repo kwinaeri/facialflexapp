@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/baseline_person_24"/>
+
+<!--    <item-->
+<!--        android:id="@+id/detectme"-->
+<!--        android:title=""-->
+<!--        android:enabled="false"/>-->
+
+    <item
+        android:title=""/>
+
+    <item
+        android:id="@+id/exercise"
+        android:title="Exercises"
+        android:icon="@drawable/baseline_local_hospital_24"/>
+
+    <item
+        android:id="@+id/gallery"
+        android:title="Records"
+        android:icon="@drawable/baseline_bar_chart_24"/>
+</menu>

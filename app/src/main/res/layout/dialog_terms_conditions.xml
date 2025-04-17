@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TERMS AND CONDITIONS"
+            android:textSize="16sp"
+            android:fontFamily="@font/lato_black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            android:justificationMode="inter_word"/>
+
+        <TextView
+            android:id="@+id/terms_conditions_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Terms and Conditions text goes here."
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            android:justificationMode="inter_word"/>
+
+        <Button
+            android:id="@+id/dialog_close_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:backgroundTint="@color/secondary_color"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
